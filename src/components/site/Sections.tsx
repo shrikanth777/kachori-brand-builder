@@ -250,11 +250,11 @@ import combo from "@/assets/masala-combo.jpg";
 
 export function Menu() {
   const items = [
-    { img: raj, name: "Raj Kachori", price: 89, tag: "Signature", d: "Crispy shell loaded with yogurt, sev & pomegranate." },
-    { img: pyaz, name: "Pyaz Kachori", price: 49, tag: "Bestseller", d: "Flaky, spicy onion-stuffed Rajasthani classic." },
-    { img: mini, name: "Mini Samosa (6 pcs)", price: 59, tag: "Snack Pack", d: "Bite-sized golden triangles, perfect with chai." },
-    { img: cheese, name: "Cheese Samosa", price: 79, tag: "New", d: "Molten cheese pull, crispy spiced shell." },
-    { img: combo, name: "Masala Combo", price: 149, tag: "Best Value", d: "2 kachori + 2 samosa + chutneys. Pure joy." },
+    { img: raj, name: "Raj Kachori", price: 25, tag: "Signature", d: "Crispy shell loaded with yogurt, sev & pomegranate." },
+    { img: pyaz, name: "Pyaz Kachori", price: 20, tag: "Bestseller", d: "Flaky, spicy onion-stuffed Rajasthani classic." },
+    { img: mini, name: "Mini Samosa (6 pcs)", price: 25, tag: "Snack Pack", d: "Bite-sized golden triangles, perfect with chai." },
+    { img: cheese, name: "Cheese Samosa", price: 25, tag: "New", d: "Molten cheese pull, crispy spiced shell." },
+    { img: combo, name: "Masala Combo", price: 25, tag: "Best Value", d: "2 kachori + 2 samosa + chutneys. Pure joy." },
   ];
   return (
     <section id="menu" className="py-24 lg:py-32">
