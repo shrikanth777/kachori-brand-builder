@@ -1,26 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "sonner";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About, HowItWorks, WhyCustomers, WhyPartners, OutletMap, Menu, Testimonials } from "@/components/site/Sections";
+import { ROICalculator } from "@/components/site/Calculator";
+import { PartnerForm } from "@/components/site/PartnerForm";
+import { Footer } from "@/components/site/Footer";
+import { FloatingWidgets } from "@/components/site/FloatingWidgets";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground antialiased">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <HowItWorks />
+        <WhyCustomers />
+        <WhyPartners />
+        <OutletMap />
+        <Menu />
+        <ROICalculator />
+        <Testimonials />
+        <PartnerForm />
+      </main>
+      <Footer />
+      <FloatingWidgets />
+      <Toaster position="top-center" richColors />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
