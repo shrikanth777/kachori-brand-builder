@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Moon, Sun } from "lucide-react";
+import logo from "@/assets/kachori-times-logo.png";
 
 const links = [
   { href: "#about", label: "About" },
@@ -37,13 +38,11 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-10 h-16 lg:h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl gradient-warm flex items-center justify-center text-primary-foreground font-display font-bold text-xl shadow-soft group-hover:scale-110 transition-transform">
-            K
-          </div>
-          <div className="leading-tight">
-            <div className="font-display text-lg font-bold tracking-tight">The Kachori Times</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Est. Today · Pan India</div>
-          </div>
+          <img
+            src={logo}
+            alt="The Kachori Times"
+            className="h-12 lg:h-14 w-auto object-contain group-hover:scale-105 transition-transform"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
