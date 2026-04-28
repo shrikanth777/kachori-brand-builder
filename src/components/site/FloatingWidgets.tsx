@@ -15,7 +15,7 @@ export function FloatingWidgets() {
   return (
     <>
       <a
-        href="https://wa.me/919999999999?text=Hi%20Kachori%20Times%2C%20I'm%20interested%20in%20partnership"
+        href="https://wa.me/918431289619?text=Hi%20Kachori%20Times%2C%20I'm%20interested%20in%20partnership"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
