@@ -1,4 +1,5 @@
 import { Instagram, MessageCircle, Mail, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/kachori-times-logo.png";
 
 export function Footer() {
   return (
@@ -7,12 +8,8 @@ export function Footer() {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-10 pt-20 pb-10">
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-xl gradient-warm flex items-center justify-center text-primary-foreground font-display font-bold text-2xl">K</div>
-              <div>
-                <div className="font-display text-xl font-bold">The Kachori Times</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] opacity-60">A snack revolution</div>
-              </div>
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="The Kachori Times" className="h-20 w-auto object-contain drop-shadow-lg" />
             </div>
             <p className="mt-5 text-base opacity-70 max-w-md">India's freshest, most hygienic kachori & samosa brand — built on community partnerships.</p>
             <div className="mt-6 flex gap-3">
