@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle, Mail, MapPin } from "lucide-react";
+import { Instagram, MessageCircle, Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -20,6 +20,7 @@ export function Footer() {
                 { i: Instagram, h: "#", l: "Instagram" },
                 { i: MessageCircle, h: "#", l: "WhatsApp" },
                 { i: Mail, h: "mailto:hello@kachoritimes.in", l: "Email" },
+                { i: Phone, h: "tel:+918431289619", l: "Phone" },
               ].map((s) => (
                 <a key={s.l} href={s.h} aria-label={s.l} className="w-11 h-11 rounded-full border border-cream/15 hover:bg-cream hover:text-charcoal flex items-center justify-center transition">
                   <s.i className="w-4 h-4"/>
@@ -43,9 +44,15 @@ export function Footer() {
             </div>
           ))}
 
-          <div className="lg:col-span-1 flex items-start gap-2 text-sm opacity-70">
-            <MapPin className="w-4 h-4 mt-0.5 shrink-0"/>
-            <span>HQ Jaipur,<br/>Rajasthan, India</span>
+          <div className="lg:col-span-1 flex flex-col gap-2 text-sm opacity-70">
+            <div className="flex items-start gap-2">
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0"/>
+              <span>HQ Bengaluru,<br/>India 560013</span>
+            </div>
+            <a href="tel:+918431289619" className="flex items-start gap-2 hover:text-secondary transition">
+              <Phone className="w-4 h-4 mt-0.5 shrink-0"/>
+              <span>+91 84312 89619</span>
+            </a>
           </div>
         </div>
 
